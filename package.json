@@ -1,0 +1,19 @@
+{
+  "name": "group3project",
+  "version": "1.0.0",
+  "description": "Covalence Online Store",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alterharris/Group-3-Project-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alterharris/Group-3-Project-1/issues"
+  },
+  "homepage": "https://github.com/alterharris/Group-3-Project-1#readme"
+}
