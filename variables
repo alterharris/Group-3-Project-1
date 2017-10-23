@@ -1,0 +1,4 @@
+export DATABASE_URL="us-cdbr-iron-east-05.cleardb.net"
+export DATABASE_USER="b259c54290a506"
+export DATABASE_PASSWORD="bb5fd3ed"
+export DATABASE_NAME="heroku_5506ad709381973"
