@@ -4,6 +4,7 @@ import * as path from 'path';
 import * as bodyParser from 'body-parser';
 import * as cookieParser from 'cookie-parser';
 // import configurePassport from'./config/passport';
+const prerender = require('prerender-node');
 import api from './api';
 
 let app = express();
@@ -11,6 +12,8 @@ let app = express();
 console.log("The server is listening");
 
 console.log(process.env.MY_Variable);
+
+prerender.set('prerenderToken', process.env.PRERENDER_TOKEN);
 
 let clientPath = path.join(__dirname, '../client');
 app.use(express.static(clientPath));
@@ -22,6 +25,8 @@ app.use(bodyParser.json());
 // configurePassport(app);
 
 // app.use('/api', api);
+
+app.use(prerender);
 
 app.get('*', (req, res, next) => {
     if(isAsset(req.url)) {
