@@ -15,7 +15,7 @@ Covalence Online Store
     * A checkout page - A page that shows the items you are purchasing and has a payment form
         * Should have fields for email, card number, CVC, expiration, AND billing zip code
         * After checkout, you should send an email to the customer thanking them for their purchase, complete with the list of items they purchased and the amounts
-    * A navbar at the top of the site
+    * DONE: A navbar at the top of the site
         * Logo links to the home page
         * Apparel link
         * Misc link
@@ -43,8 +43,8 @@ Covalence Online Store
         * productid int FK for Product id, cascade update, cascade on delete
         * purchaseid int FK for Purchase id, cascade update, cascade on delete
 * Must use Express and NodeJS, hosted in Heroku
-* Must use prerender.io
-* Must use Stripe for card processing
+* (IP)Must use prerender.io
+* (IP)Must use Stripe for card processing
 * INSTALLED (BB): Must use Sendgrid or Mailgun for email sending
 * Must be responsive (look good on mobile and desktop)
     * Bootstrap's Grid System will be very helpful

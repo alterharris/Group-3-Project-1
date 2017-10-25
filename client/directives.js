@@ -7,4 +7,10 @@ angular.module('Project1.directives', [])
             activePage: '='
         }
     };
+}])
+.directive('footerNav', [function() {
+    return {
+        templateUrl: 'directives/footer.html',
+        restrict: 'E',
+    };
 }]);
