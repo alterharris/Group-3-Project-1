@@ -4,7 +4,7 @@ import * as path from 'path';
 import * as bodyParser from 'body-parser';
 import * as cookieParser from 'cookie-parser';
 // import configurePassport from'./config/passport';
-// import api from './api';
+import api from './api';
 
 let app = express();
 

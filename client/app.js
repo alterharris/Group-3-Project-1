@@ -1,7 +1,7 @@
 angular.module('Project1', [
     'Project1.controllers',
     'Project1.factories',
-    'Project1.services',
+    // 'Project1.services',
     'Project1.directives',
     'ngRoute',
     'ngResource'])
@@ -9,23 +9,29 @@ angular.module('Project1', [
         $locationProvider.html5Mode(true);
 
         $routeProvider
-            
-          
             .when('/', {
                 templateUrl: 'views/welcome.html',
+                controller: ''
+            })
+            // .when('/products', {
+            //     templateUrl: 'views/product_list.html',
+            //     controller: ''
+            // })
+            .when('/apparel', {
+                templateUrl: 'views/product_list.html',
+                controller: ''
+            })
+            .when('/misc', {
+                templateUrl: 'views/misc.html',
+                controller: ''
+            })
+            .when('/single_product', {
+                templateUrl: 'views/single_product.html',
                 controller: ''
             })
             .when('/contact', {
                 templateUrl: 'views/contact.html',
 
-            })
-            .when('/products', {
-                templateUrl: 'views/product_list.html',
-                controller: 'getAllProductsController'
-            })
-            .when('/single_product', {
-                templateUrl: 'views/single_product.html',
-                controller: ''
             })
             .when('/checkout', {
                 templateUrl: 'views/checkout.html',
@@ -34,11 +40,11 @@ angular.module('Project1', [
           
     }])
 
-    // .run(['$rootScope', '$location', 'UserService', function ($rootScope, $location, UserService) {
-    //     $rootScope.$on('$routeChangeStart', function (event, nextRoute, previousRoute) {
-    //         if (nextRoute.$$route && nextRoute.$$route.requiresLogin && !UserService.isLoggedIn()) {
-    //             event.preventDefault();
-    //             UserService.loginRedirect();
-    //         }
-    //     });
-    // }]);
+    .run(['$rootScope', '$location', function ($rootScope, $location) {
+        $rootScope.$on('$routeChangeStart', function (event, nextRoute, previousRoute) {
+            if (nextRoute.$$route && nextRoute.$$route.requiresLogin && !UserService.isLoggedIn()) {
+                event.preventDefault();
+                UserService.loginRedirect();
+            }
+        });
+    }]);
