@@ -1,0 +1,44 @@
+#superhero {
+    background: url("/images/covalence-store-home.jpg") no-repeat center center;
+    margin: auto;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#superdiv{
+    color:white;
+    position: absolute; 
+    top: 400px;
+    left: 200px;
+}
+#herohanger{
+    background-image: url("/images/covalence-store-apparel-hero.jpg");
+    background-position: 0% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 25em;
+}
+#mischero{
+    background-image: url("/images/covalence-store-misc-hero.jpg");
+    background-position: 0% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 25em;
+}
+.nav-color{
+    background-color:#394447;
+    /* opacity: .85; */
+}
+
+a{
+    color:#17a2b8;
+
+}
+cart{
+    color:white;
+}

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var mysql = require("mysql");
+const mysql = require("mysql");
 exports.pool = mysql.createPool({
     connectionLimit: 10,
     host: process.env.DATABASE_URL,
@@ -8,3 +8,54 @@ exports.pool = mysql.createPool({
     password: process.env.DATABASE_PASSWORD,
     database: process.env.DATABASE_NAME
 });
+function callProcedure(procedureName, args = []) {
+    return new Promise(function (resolve, reject) {
+        exports.pool.getConnection(function (err, connection) {
+            if (err) {
+                reject(err);
+            }
+            else {
+                let placeholders = "";
+                if (args && args.length > 0) {
+                    for (let i = 0; i < args.length; i++) {
+                        if (i === args.length - 1) {
+                            // if we are on the last argument in the array
+                            placeholders += "?";
+                        }
+                        else {
+                            placeholders += "?,";
+                        }
+                    }
+                }
+                let callString = "CALL " + procedureName + "(" + placeholders + ");"; // CALL GetChirps();, or CALL InsertChirp(?,?,?);
+                connection.query(callString, args, function (err, resultsets) {
+                    connection.release();
+                    if (err) {
+                        reject(err);
+                    }
+                    else {
+                        resolve(resultsets);
+                    }
+                });
+            }
+        });
+    });
+}
+function rows(procedureName, args = []) {
+    return callProcedure(procedureName, args).then(resultsets => {
+        return resultsets[0];
+    });
+}
+exports.rows = rows;
+function row(procedureName, args = []) {
+    return callProcedure(procedureName, args).then(resultsets => {
+        return resultsets[0][0];
+    });
+}
+exports.row = row;
+function empty(procedureName, args = []) {
+    return callProcedure(procedureName, args).then(() => {
+        return;
+    });
+}
+exports.empty = empty;

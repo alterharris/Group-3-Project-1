@@ -1,21 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var express = require("express");
-var path = require("path");
-var bodyParser = require("body-parser");
-var cookieParser = require("cookie-parser");
-// import configurePassport from'./config/passport';
-// import api from './api';
-var app = express();
+const express = require("express");
+const path = require("path");
+const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
+let app = express();
 console.log("The server is listening");
 console.log(process.env.MY_Variable);
-var clientPath = path.join(__dirname, '../client');
+let clientPath = path.join(__dirname, '../client');
 app.use(express.static(clientPath));
 app.use(cookieParser());
 app.use(bodyParser.json());
 // configurePassport(app);
 // app.use('/api', api);
-app.get('*', function (req, res, next) {
+app.get('*', (req, res, next) => {
     if (isAsset(req.url)) {
         return next();
     }
@@ -25,11 +23,11 @@ app.get('*', function (req, res, next) {
 });
 app.listen(3000);
 function isAsset(path) {
-    var pieces = path.split('/');
+    let pieces = path.split('/');
     if (pieces.length === 0) {
         return false;
     }
-    var last = pieces[pieces.length - 1];
+    let last = pieces[pieces.length - 1];
     if (path.indexOf('/api') !== -1 || path.indexOf('/?') !== -1) {
         return true;
     }
