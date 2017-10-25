@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+body {
+    margin: 60px 0 0 0;
+  }
+  
+=======
 #contact-form {
   width: 800px;
   margin: 0 auto;
@@ -6,6 +12,7 @@
 body {
   margin: 60px 0 0 0;
 }
+>>>>>>> d2732ccce992f8256085a736751ca7c398e0199c
 #superhero {
   background: url("/images/covalence-store-home.jpg") no-repeat center center;
   margin: auto;
