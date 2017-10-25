@@ -9,19 +9,15 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item {{activePage==='apparel' ? 'active' : ''}}">
-                <a class="nav-link" href="/apparel">Apparel</a>
+                <a class="nav-link" id="apparel" href="/apparel">APPAREL</a>
             </li>
             <li class="nav-item {{activePage==='misc' ? 'active' : ''}}">
-                <a class="nav-link" href="/misc">Misc</a>
+                <a class="nav-link" id="misc" href="/misc">MISC</a>
             </li>
             <li class="nav-item {{activePage==='contact' ? 'active' : ''}}">
-                <a class="nav-link" href="/contact">Contact Us</a>
+                <a class="nav-link" id="contact" href="/contact">CONTACT US</a>
             </li>
         </ul>
-        <div>Cart</div>
-        <a href="/checkout">
-            <div class="cart">
-                <div>
-        </a>
-        </div>
+        <li class="nav-item {{activePage==='checkout' ? 'active' : ''}}"></li>
+        <a class="cart" id="cart" href="/checkout">CART</a>
 </nav>

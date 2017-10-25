@@ -43,10 +43,19 @@ body {
   /* opacity: .85; */
 }
 
-a {
+#apparel {
   color: #17a2b8;
+  font-family: brandon grotesque;
 }
-cart {
+#misc {
+    color: #17a2b8;
+    font-family: brandon grotesque;
+  }
+#contact {
+    color: #17a2b8;
+    font-family: brandon grotesque;
+  }
+#cart {
   color: white;
 }
 
@@ -60,4 +69,10 @@ cart {
 
 .useCreditCards {
   margin-left: 20em;
+}
+
+#welcome {
+    font-family: brandon grotesque;
+    font-weight: bold;
+    font-size: 64px;
 }
