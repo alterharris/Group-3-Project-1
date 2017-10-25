@@ -1,14 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var express = require("express");
-var procedures = require("../procedures/categories.proc");
-var router = express.Router();
+const express = require("express");
+const procedures = require("../procedures/categories.proc");
+let router = express.Router();
 router.route('/') //actually /api/categories
-    .get(function (req, res) {
+    .get((req, res) => {
     procedures.all()
-        .then(function (categories) {
+        .then((categories) => {
         res.send(categories);
-    }).catch(function (err) {
+    }).catch((err) => {
         console.log(err);
         res.sendStatus(500);
     });
