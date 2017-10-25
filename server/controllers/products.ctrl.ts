@@ -12,15 +12,13 @@ router.route('/').get((req, res) => {
     });
 });
 
-/*Ask Brad about stored procedure prodect() by getting 
-product id*/
-//router.route('/:id').get((req, res) => {
-    //procedures.product(req.params.id)
-    //.then((product) => {
-    //    res.send(product);
-    //}).catch((err) => {
-    //    res.sendStatus(500);
-    //});
-//});
+router.route('/:id').get((req, res) => {
+    procedures.product(req.params.id)
+    .then((product) => {
+       res.send(product);
+    }).catch((err) => {
+       res.sendStatus(500);
+    });
+});
 
 export default router;
