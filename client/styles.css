@@ -42,3 +42,15 @@ a{
 cart{
     color:white;
 }
+
+.imgCreditCard{
+    float: left;
+}
+
+#usableCards{
+    margin-left: 5em;
+}
+
+.useCreditCards{
+    margin-left: 20em;
+}
