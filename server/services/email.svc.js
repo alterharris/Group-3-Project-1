@@ -5,7 +5,7 @@ const helper = sendgrid.mail;
 const sg = sendgrid(process.env.SENDGRID_API_KEY || "");
 function sendEmail(to, from, subject, message) {
     let toEmail = new helper.Email(to);
-    let fromEmail = new helper.Email(from, "Covalence Group 3");
+    let fromEmail = new helper.Email(from);
     let emailContent = new helper.Content("text/html", message);
     let mail = new helper.Mail(fromEmail, subject, toEmail, emailContent);
     let request = sg.emptyRequest({
