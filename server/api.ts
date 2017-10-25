@@ -9,6 +9,6 @@ const router = express.Router();
 router
   .use("/categories", categories)
   .use("/payment", paymentCtrl)
-  .use("/contactforms", contactFormController);
+  .use("/contactform", contactFormController);
 
 export default router;

@@ -9,6 +9,6 @@ angular
   .factory("ContactForm", [
     "$resource",
     function($resource) {
-      return $resource("/api/contactforms", { id: "@id" });
+      return $resource("/api/contactform", { id: "@id" });
     }
   ]);

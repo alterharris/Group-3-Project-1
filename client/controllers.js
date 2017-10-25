@@ -28,7 +28,7 @@ angular
           message: $scope.message
         });
 
-        //makes a POST request to /api/contactforms with a body with properties from and message
+        //makes a POST request to /api/contactform with a body with properties from and message
         contact.$save(
           function() {
             alert(

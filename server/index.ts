@@ -10,7 +10,7 @@ let app = express();
 
 console.log("The server is listening");
 
-console.log(process.env.MY_Variable);
+// console.log(process.env.MY_Variable);
 
 prerender.set("prerenderToken", process.env.PRERENDER_TOKEN);
 

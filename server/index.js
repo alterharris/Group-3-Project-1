@@ -8,7 +8,7 @@ const cookieParser = require("cookie-parser");
 const prerender = require("prerender-node");
 let app = express();
 console.log("The server is listening");
-console.log(process.env.MY_Variable);
+// console.log(process.env.MY_Variable);
 prerender.set("prerenderToken", process.env.PRERENDER_TOKEN);
 let clientPath = path.join(__dirname, "../client");
 app.use(express.static(clientPath));
