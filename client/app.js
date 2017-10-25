@@ -13,10 +13,10 @@ angular.module('Project1', [
                 templateUrl: 'views/welcome.html',
                 controller: ''
             })
-            // .when('/products', {
-            //     templateUrl: 'views/product_list.html',
-            //     controller: ''
-            // })
+            .when('/payment', {
+                templateUrl: 'views/payment.html',
+                controller: ''
+            })
             .when('/apparel', {
                 templateUrl: 'views/product_list.html',
                 controller: ''
