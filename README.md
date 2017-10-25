@@ -15,7 +15,7 @@ Covalence Online Store
     * A checkout page - A page that shows the items you are purchasing and has a payment form
         * Should have fields for email, card number, CVC, expiration, AND billing zip code
         * After checkout, you should send an email to the customer thanking them for their purchase, complete with the list of items they purchased and the amounts
-    * A navbar at the top of the site
+    * DONE: A navbar at the top of the site
         * Logo links to the home page
         * Apparel link
         * Misc link
