@@ -4,6 +4,6 @@ export function all(): Promise<Array<models.IProduct>> {
   return rows("getAllProducts");
 }
 
-export function product(): Promise<Array<models.IProduct>> {
+export function product(id: number): Promise<Array<models.IProduct>> {
   return row("getProductByID");
 }
