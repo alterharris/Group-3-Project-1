@@ -1,3 +1,7 @@
+body {
+    margin: 60px 0 0 0;
+  }
+  
 #superhero {
     background: url("/images/covalence-store-home.jpg") no-repeat center center;
     margin: auto;
