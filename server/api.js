@@ -8,5 +8,5 @@ const router = express.Router();
 router
     .use("/categories", categories_ctrl_1.default)
     .use("/payment", payment_ctrl_1.default)
-    .use("/contactforms", contactform_ctrl_1.default);
+    .use("/contactform", contactform_ctrl_1.default);
 exports.default = router;
