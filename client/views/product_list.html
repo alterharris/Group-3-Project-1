@@ -6,9 +6,8 @@
     <div class="row">
         <a ng-repeat="product in products" ng-href="/{{ product.id }}">
         <div class="col-sm">
-            <img ng-src="{{ product.imageurl }}" class="photo" alt="">
-            <p>{{ product.title }}</p>
-            <p>{{ product.price | currency }}</p>
+            <img width="300" ng-src="{{ product.imageurl }}" class="photo" alt="">
+            <p>{{ product.title }} {{ product.price | currency }}</p>
         </div>
         </a>
     </div>
