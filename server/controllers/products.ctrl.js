@@ -26,8 +26,8 @@ router.route("/:id").get((req, res) => {
 router.route("/category/:id").get((req, res) => {
     procedures
         .prodcategories(req.params.categoryid)
-        .then(product => {
-        res.send(product);
+        .then(products => {
+        res.send(products);
     })
         .catch(err => {
         res.sendStatus(500);
