@@ -44,7 +44,7 @@ Covalence Online Store
         * purchaseid int FK for Purchase id, cascade update, cascade on delete
 * Must use Express and NodeJS, hosted in Heroku
 * (IP)Must use prerender.io
-* (IP)Must use Stripe for card processing
+* (BB)Must use Stripe for card processing
 * INSTALLED (BB): Must use Sendgrid or Mailgun for email sending
 * Must be responsive (look good on mobile and desktop)
     * Bootstrap's Grid System will be very helpful
