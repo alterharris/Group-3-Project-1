@@ -11,10 +11,10 @@ router.post("/", (req, res) => {
     "Covalence Store Inquiry",
     req.body.message
   )
-    .then(response => {
+    .then((response) => {
       res.sendStatus(201);
     })
-    .catch(e => {
+    .catch((e) => {
       console.log(e);
       res.sendStatus(500);
     });
