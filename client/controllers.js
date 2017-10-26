@@ -1,5 +1,4 @@
-angular.module("Project1.controllers", [])
-.controller("PaymentController", ["$scope", function($scope) {
+angular.module("Project1.controllers", []).controller("PaymentController", ["$scope", function($scope) {
       let elements = stripe.elements();
       let card = elements.create("card");
       card.mount("#card-field");

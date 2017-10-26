@@ -4,8 +4,16 @@
 
 <div class="container">
     <div class="row">
-        <a ng-repeat="product in products">
-            <div class="col-sm">
+        <!-- <a ng-repeat="product in products" ng-href="/{{ product.id }}">
+        <div class="col-sm">
+            <img ng-src="{{ product.imageurl }}" class="photo" alt="">
+            <p>{{ product.title }}</p>
+            <p>{{ product.price | currency }}</p>
+        </div>
+        </a>
+    </div>
+</div>             -->
+            <div class="col-sm-4">
                 <div class="thumbnail">
                     <a href="/images/covalence-store-apparel-09.png" target="_blank">
                         <img src="/images/covalence-store-apparel-09.png" alt="Dark Shirt" style="width:100%">
@@ -15,7 +23,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm">
+            <div class="col-sm-4">
                 <div class="thumbnail">
                     <a href="/images/covalence-store-apparel-10.png" target="_blank">
                         <img src="/images/covalence-store-apparel-10.png" alt="White Shirt" style="width:100%">
@@ -25,7 +33,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm">
+            <div class="col-sm-4">
                 <div class="thumbnail">
                     <a href="/images/covalence-store-apparel-11.png" target="_blank">
                         <img src="/images/covalence-store-apparel-11.png" alt="Blue Shirt" style="width:100%">
@@ -35,7 +43,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm">
+            <div class="col-sm-4">
                 <div class="thumbnail">
                     <a href="/images/covalence-store-apparel-12.png" target="_blank">
                         <img src="/images/covalence-store-apparel-12.png" alt="Sweatshirt" style="width:100%">
