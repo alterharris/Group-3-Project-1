@@ -1,5 +1,54 @@
 <main-navigation active-page="'apparel'"></main-navigation>
 <!-- <h3> Product List Page</h3> -->
-<div class="jumbotron" id="herohanger"></div>
+<div class="jumbotron herohanger jumbotron-fluid"></div>
+
+<div class="container">
+    <div class="row">
+        <a ng-repeat="product in products">
+            <div class="col-sm">
+                <div class="thumbnail">
+                    <a href="/images/covalence-store-apparel-09.png" target="_blank">
+                        <img src="/images/covalence-store-apparel-09.png" alt="Dark Shirt" style="width:100%">
+                        <div class="caption">
+                            <p>Dark Tee $15</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="thumbnail">
+                    <a href="/images/covalence-store-apparel-10.png" target="_blank">
+                        <img src="/images/covalence-store-apparel-10.png" alt="White Shirt" style="width:100%">
+                        <div class="caption">
+                            <p>White Tee $15</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="thumbnail">
+                    <a href="/images/covalence-store-apparel-11.png" target="_blank">
+                        <img src="/images/covalence-store-apparel-11.png" alt="Blue Shirt" style="width:100%">
+                        <div class="caption">
+                            <p>Blue Tee $15</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="thumbnail">
+                    <a href="/images/covalence-store-apparel-12.png" target="_blank">
+                        <img src="/images/covalence-store-apparel-12.png" alt="Sweatshirt" style="width:100%">
+                        <div class="caption">
+                            <p>Graphic Pullover $25</p>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </a>
+    </div>
+</div>
 
 <footer-nav></footer-nav>

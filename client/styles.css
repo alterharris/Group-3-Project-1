@@ -3,9 +3,13 @@
     margin: 0 auto;
     padding: 1em;
   }
-  body {
+  /* body {
     margin: 60px 0 0 0;
-  }
+  } */
+
+  /* body{
+    padding-top: 56px;
+  } */
   #superhero {
     background: url("/images/covalence-store-home.jpg") no-repeat center center;
     margin: auto;
@@ -22,9 +26,9 @@
     top: 400px;
     left: 200px;
   }
-  #herohanger {
+  .herohanger {
     background-image: url("/images/covalence-store-apparel-hero.jpg");
-    background-position: 0% 25%;
+    /* background-position: 0% 25%; */
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -40,7 +44,7 @@
   }
   .nav-color {
     background-color: #394447;
-    /* opacity: .85; */
+    opacity: .85;
   }
   
   #apparel {
