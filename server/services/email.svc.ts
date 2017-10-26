@@ -9,7 +9,7 @@ export function sendEmail(
   message: string
 ) {
   let toEmail = new helper.Email(to);
-  let fromEmail = new helper.Email(from, "Covalence Group 3");
+  let fromEmail = new helper.Email(from);
   let emailContent = new helper.Content("text/html", message);
 
   let mail = new helper.Mail(fromEmail, subject, toEmail, emailContent);
