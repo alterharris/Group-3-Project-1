@@ -9,3 +9,7 @@ function product(id) {
     return db_1.row("getProductByID");
 }
 exports.product = product;
+function prodcategories(categoryid) {
+    return db_1.rows("getProductsByCategory", [categoryid]);
+}
+exports.prodcategories = prodcategories;
