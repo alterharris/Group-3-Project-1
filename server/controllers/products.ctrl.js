@@ -23,14 +23,14 @@ router.route("/:id").get((req, res) => {
         res.sendStatus(500);
     });
 });
-router.route("/category/:id").get((req, res) => {
-    procedures
-        .prodcategories(req.params.categoryid)
-        .then(products => {
-        res.send(products);
-    })
-        .catch(err => {
-        res.sendStatus(500);
-    });
-});
+// router.route("/category/:id").get((req, res) => {
+//   procedures
+//     .prodcategories(req.params.categoryid)
+//     .then(products => {
+//       res.send(products);
+//     })
+//     .catch(err => {
+//       res.sendStatus(500);
+//     });
+// });
 exports.default = router;
