@@ -7,9 +7,9 @@
     margin: 60px 0 0 0;
   } */
 
-  /* body{
-    padding-top: 56px;
-  } */
+.payment-body{
+    padding-top: 70px;
+  } 
   #superhero {
     background: url("/images/covalence-store-home.jpg") no-repeat center center;
     margin: auto;
@@ -73,6 +73,7 @@
   
   .useCreditCards {
     margin-left: 20em;
+    margin-bottom: 7em;
   }
   
   #welcome {
