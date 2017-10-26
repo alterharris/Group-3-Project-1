@@ -13,6 +13,15 @@ router.route("/").get((req, res) => {
         res.sendStatus(500);
     });
 });
+router.route("/category/:categoryid").get((req, res) => {
+    procedures
+        .prodcategories(req.params.categoryid)
+        .then(products => {
+        res.send(products);
+    }).catch(err => {
+        res.sendStatus(500);
+    });
+});
 router.route("/:id").get((req, res) => {
     procedures
         .product(req.params.id)
