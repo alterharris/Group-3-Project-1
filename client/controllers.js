@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-angular.module('Project1.controllers', [])
-.controller('PaymentController', ['$scope', function($scope){
-    let elements = stripe.elements();
-    let card = elements.create('card');
-    card.mount('#card-number');
-=======
-angular
-  .module("Project1.controllers", [])
-  .controller("PaymentController", [
-    "$scope",
-    function($scope) {
+angular.module("Project1.controllers", [])
+.controller("PaymentController", ["$scope", function($scope) {
       let elements = stripe.elements();
       let card = elements.create("card");
       card.mount("#card-field");
->>>>>>> 7bea7f8daa492c83ad1fb5f6b5e0e832478e5958
-
       $scope.process = function() {
         stripe.createToken(card).then(result => {
           if (result.error) {
@@ -26,10 +14,7 @@ angular
       };
     }
   ])
-  .controller("ContactController", [
-    "$scope",
-    "ContactForm",
-    function($scope, ContactForm) {
+  .controller("ContactController", ["$scope", "ContactForm", function($scope, ContactForm) {
       $scope.send = function() {
         let contact = new ContactForm({
           from: $scope.email,
@@ -48,5 +33,4 @@ angular
           }
         );
       };
-    }
-  ]);
+    }]);
