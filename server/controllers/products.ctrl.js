@@ -23,4 +23,14 @@ router.route("/:id").get((req, res) => {
         res.sendStatus(500);
     });
 });
+router.route("/category/:id").get((req, res) => {
+    procedures
+        .prodcategories(req.params.categoryid)
+        .then(product => {
+        res.send(product);
+    })
+        .catch(err => {
+        res.sendStatus(500);
+    });
+});
 exports.default = router;
