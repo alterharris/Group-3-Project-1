@@ -20,7 +20,7 @@ angular
         })
         .when("/payment", {
           templateUrl: "views/payment.html",
-          controller: ""
+          controller: "PaymentController"
         })
         .when("/apparel", {
           templateUrl: "views/product_list.html",
