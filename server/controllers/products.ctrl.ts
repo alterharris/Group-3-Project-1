@@ -14,7 +14,19 @@ router.route("/").get((req, res) => {
     });
 });
 
-router.route("/:id").get((req, res) => {
+
+
+ router.route("/category/:categoryid").get((req, res) => {
+   procedures
+     .prodcategories(req.params.categoryid)     
+     .then(products => {
+     res.send(products);
+    })     .catch(err => {
+       res.sendStatus(500);
+    });
+ });
+
+ router.route("/:id").get((req, res) => {
   procedures
     .product(req.params.id)
     .then(product => {
@@ -24,16 +36,5 @@ router.route("/:id").get((req, res) => {
       res.sendStatus(500);
     });
 });
-
-// router.route("/category/:id").get((req, res) => {
-//   procedures
-//     .prodcategories(req.params.categoryid)
-//     .then(products => {
-//       res.send(products);
-//     })
-//     .catch(err => {
-//       res.sendStatus(500);
-//     });
-// });
 
 export default router;

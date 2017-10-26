@@ -4,9 +4,11 @@ const express = require("express");
 const categories_ctrl_1 = require("./controllers/categories.ctrl");
 const payment_ctrl_1 = require("./controllers/payment.ctrl");
 const contactform_ctrl_1 = require("./controllers/contactform.ctrl");
+const products_ctrl_1 = require("./controllers/products.ctrl");
 const router = express.Router();
 router
     .use("/categories", categories_ctrl_1.default)
     .use("/payment", payment_ctrl_1.default)
-    .use("/contactform", contactform_ctrl_1.default);
+    .use("/contactform", contactform_ctrl_1.default)
+    .use("/products", products_ctrl_1.default);
 exports.default = router;

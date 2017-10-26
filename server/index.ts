@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 
 // configurePassport(app);
 
-// app.use('/api', api);
+app.use('/api', api);
 
 app.use(prerender);
 

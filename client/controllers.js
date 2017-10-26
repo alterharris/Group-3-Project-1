@@ -15,6 +15,16 @@ angular.module("Project1.controllers", []).controller("PaymentController", ["$sc
       };
     }
   ])
+  .controller("ApparelController", ['$scope','Apparel', function($scope, Apparel) {
+    $scope.products = Apparel.query({categoryid: 1});
+   
+  }])
+  .controller("MiscController", ['$scope', function($scope) {
+    $scope.products = Product.query({categoryid: 11});
+    
+ }])
+  //.controller("SingleProductController", ['$scope', '$RouteParams', ])
+ //  /]*/
   .controller("ContactController", ["$scope", "ContactForm", function($scope, ContactForm) {
       $scope.send = function() {
         let contact = new ContactForm({

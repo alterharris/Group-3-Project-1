@@ -24,15 +24,15 @@ angular
         })
         .when("/apparel", {
           templateUrl: "views/product_list.html",
-          controller: ""
+          controller: "ApparelController"
         })
         .when("/misc", {
           templateUrl: "views/misc.html",
-          controller: ""
+          controller: "MiscController"
         })
         .when("/single_product", {
           templateUrl: "views/single_product.html",
-          controller: ""
+          controller: "SingleProductController"
         })
         .when("/contact", {
           templateUrl: "views/contact.html",
