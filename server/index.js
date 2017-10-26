@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 // import configurePassport from'./config/passport';
 const prerender = require("prerender-node");
+const api_1 = require("./api");
 let app = express();
 console.log("The server is listening");
 // console.log(process.env.MY_Variable);
@@ -15,7 +16,7 @@ app.use(express.static(clientPath));
 app.use(cookieParser());
 app.use(bodyParser.json());
 // configurePassport(app);
-// app.use('/api', api);
+app.use('/api', api_1.default);
 app.use(prerender);
 app.get("*", (req, res, next) => {
     if (isAsset(req.url)) {
