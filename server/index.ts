@@ -12,11 +12,11 @@ console.log("The server is listening");
 
 // console.log(process.env.MY_Variable);
 
-prerender.set('prerenderToken', 'dvVF8ZDN2nkhVhkw1RKv');
-prerender.set('prerenderServiceUrl', 'http://localhost:1337/');
+// prerender.set('prerenderToken', 'dvVF8ZDN2nkhVhkw1RKv');
+// // prerender.set('prerenderServiceUrl', 'http://localhost:1337/');
 
 // COMMENT THIS OUT AFTER TESTING
-prerender.set("prerenderServiceUrl", "http://localhost:1337/");
+// prerender.set("prerenderServiceUrl", "http://localhost:1337/");
 // COMMENT THIS OUT AFTER TESTING
 
 let clientPath = path.join(__dirname, "../client");

@@ -6,7 +6,7 @@ function all() {
 }
 exports.all = all;
 function product(id) {
-    return db_1.row("getProductByID");
+    return db_1.row("getProductByID", [id]);
 }
 exports.product = product;
 function prodcategories(categoryid) {

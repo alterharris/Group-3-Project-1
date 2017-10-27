@@ -16,6 +16,9 @@ angular
   function($resource) {
     return $resource('/api/products/category/:categoryid', {categoryid: '@categoryid'});
   }]) 
+  .factory("SingleProduct", ["$resource", function($resource){
+    return $resource('/api/products/:id', {id:'@id'});
+  }])
  .factory("Misc", ["$resource",  function($resource) {
     return $resource('/api/products/category/:categoryid', {categoryid:' @categoryid'});
  }])

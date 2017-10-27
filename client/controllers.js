@@ -72,6 +72,12 @@ angular
   ])
   //.controller("SingleProductController", ['$scope', '$RouteParams', ])
   //  /]*/
+  .controller("SingleProductController", ['$scope', 'SingleProduct','$routeParams','$location', function($scope, SingleProduct,
+    $routeParams, $location) {
+      $scope.product = SingleProduct.get({id: $routeParams.id});
+    }
+  ])
+
   .controller("ContactController", [
     "$scope",
     "ContactForm",

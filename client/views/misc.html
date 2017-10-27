@@ -5,7 +5,7 @@
       <div class="col-sm">
           <div class="container">
               <div class="row">
-                  <a ng-repeat="product in products" ng-href="/{{ product.id }}">
+                  <a ng-repeat="product in products" ng-href="/single_product/{{ product.id }}">
                       <div class="col-sm">
                           <img width="300em" ng-src="{{ product.imageurl }}" class="photo" alt="">
                           <p>{{ product.title }} {{ product.price | currency }}</p>

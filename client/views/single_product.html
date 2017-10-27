@@ -1,4 +1,9 @@
 <main-navigation></main-navigation>
 <h3> Single Product Page</h3>
 
+<a ng-href="/{{ product.id }}">
+    <div class="col-sm">
+        <img width="300em" ng-src="{{ product.imageurl }}" class="photo" alt="">
+        <p>{{ product.title }} {{ product.price | currency }}</p>
+
 <footer-nav></footer-nav>
