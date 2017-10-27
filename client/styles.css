@@ -99,3 +99,6 @@ p{
 .btn{
   margin-left: 15px;
 }
+#purchase{
+  display: inline-block;
+}
