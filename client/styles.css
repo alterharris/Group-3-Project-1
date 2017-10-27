@@ -1,7 +1,7 @@
 .contact {
   background-color: #394447;
   opacity: 0.9;
-  height: 800px;
+  height: 600px;
 }
 #contact-form {
   width: 400px;
@@ -101,8 +101,7 @@ p {
   font-size: 1.5em;
 }
 
-
-.btn{
+.btn {
   margin-left: 15px;
 }
 
