@@ -2,6 +2,7 @@
 <html lang="en" ng-app="Project1">
 
 <head>
+    <meta name="fragment" content="!">
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <title>Covalence Store</title>
+    <title>{{ seo.title }}</title>
+    <meta property="og:title" content="{{ seo.title }}">
+    <meta property="twitter:title" content="{{seo.title}}">
+    <meta property="og:image" content="{{ seo.image }}">
+    <meta property="twitter:image" content="{{seo.image}}">
+    <meta property="og:url" content="{{ seo.url }}">
+    <meta property="twitter:url" content="{{ seo.url }}">
+    <meta property="description" content="{{ seo.description }}">
+    <meta property="og:description" content="{{ seo.description }}">
+    <meta property="twitter:description" content="{{ seo.description }}">
 </head>
 
 <body>
@@ -36,6 +46,7 @@
     </script>
 
 
+    <footer-nav></footer-nav>
 
 </body>
 

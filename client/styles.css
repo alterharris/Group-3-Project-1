@@ -1,10 +1,13 @@
 #contact-form {
-  width: 800px;
+  width: 400px;
   margin: 0 auto;
   padding: 1em;
 }
 body {
   margin: 61px 0 3em 0;
+}
+.jumbotron {
+  border-radius: 0;
 }
 
 .payment-body {
@@ -19,13 +22,14 @@ body {
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
+  background-color: #394447;
 }
 
 #superdiv {
   color: white;
   position: absolute;
-  top: 400px;
-  left: 200px;
+  top: 20em;
+  left: 5em;
 }
 .herohanger {
   background-image: url("/images/covalence-store-apparel-hero.jpg");
@@ -46,7 +50,7 @@ body {
 }
 .nav-color {
   background-color: #394447;
-  opacity: 0.85;
+  /* opacity: 0.85; */
 }
 .nav-link {
   color: red;
