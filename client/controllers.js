@@ -30,8 +30,8 @@ angular.module("Project1.controllers", [])
     $scope.products = Apparel.query({categoryid: 1});
    
   }])
-  .controller("MiscController", ['$scope', function($scope) {
-    $scope.products = Product.query({categoryid: 11});
+  .controller("MiscController", ['$scope','Misc', function($scope, Misc) {
+    $scope.products = Misc.query({categoryid: 11});
     
  }])
   //.controller("SingleProductController", ['$scope', '$RouteParams', ])
