@@ -17,6 +17,9 @@ body {
 
 .payment-body {
   padding-top: 70px;
+  display:block;
+  position: center;
+  margin:auto;
 }
 #superhero {
   background: url("/images/covalence-store-home.jpg") no-repeat center center;
