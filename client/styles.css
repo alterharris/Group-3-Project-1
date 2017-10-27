@@ -1,3 +1,8 @@
+.contact {
+  background-color: #394447;
+  opacity: 0.9;
+  height: 800px;
+}
 #contact-form {
   width: 400px;
   margin: 0 auto;
