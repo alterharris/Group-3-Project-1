@@ -18,4 +18,7 @@ angular
   }]) 
  .factory("Misc", ["$resource",  function($resource) {
     return $resource('/api/products/category/:categoryid', {categoryid:' @categoryid'});
+ }])
+ .factory("Payment", ['$resource', function($resource){
+   return $resource('/api/payment/:id', {id: '@id'})
  }]);
