@@ -12,7 +12,8 @@ console.log("The server is listening");
 
 // console.log(process.env.MY_Variable);
 
-prerender.set("prerenderToken", process.env.PRERENDER_TOKEN);
+prerender.set('prerenderToken', 'dvVF8ZDN2nkhVhkw1RKv');
+prerender.set('prerenderServiceUrl', 'http://localhost:1337/');
 
 // COMMENT THIS OUT AFTER TESTING
 prerender.set("prerenderServiceUrl", "http://localhost:1337/");
@@ -30,6 +31,7 @@ app.use(bodyParser.json());
 app.use("/api", api);
 
 app.use(prerender);
+
 
 app.get("*", (req, res, next) => {
   if (isAsset(req.url)) {

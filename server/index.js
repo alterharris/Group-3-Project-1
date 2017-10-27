@@ -10,7 +10,8 @@ const api_1 = require("./api");
 let app = express();
 console.log("The server is listening");
 // console.log(process.env.MY_Variable);
-prerender.set("prerenderToken", process.env.PRERENDER_TOKEN);
+prerender.set('prerenderToken', 'dvVF8ZDN2nkhVhkw1RKv');
+prerender.set('prerenderServiceUrl', 'http://localhost:1337/');
 // COMMENT THIS OUT AFTER TESTING
 prerender.set("prerenderServiceUrl", "http://localhost:1337/");
 // COMMENT THIS OUT AFTER TESTING
