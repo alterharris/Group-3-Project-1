@@ -12,6 +12,9 @@ body {
 
 .payment-body {
   padding-top: 70px;
+  display:block;
+  position: center;
+  margin:auto;
 }
 
 #superhero {
