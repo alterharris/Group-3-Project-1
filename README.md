@@ -45,7 +45,7 @@ Covalence Online Store
 * DONE Must use Express and NodeJS, hosted in Heroku
 * DONE (ED) Must use prerender.io
 * DONE (ED) Must use Stripe for card processing
-* INSTALLED (BB): Must use Sendgrid or Mailgun for email sending
+* DONE (BB): Must use Sendgrid or Mailgun for email sending
 * Must be responsive (look good on mobile and desktop)
     * Bootstrap's Grid System will be very helpful
     * You can find standalone grid systems if you don't want to use Bootstrap

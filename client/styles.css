@@ -1,5 +1,5 @@
 #contact-form {
-  width: 800px;
+  width: 400px;
   margin: 0 auto;
   padding: 1em;
 }
@@ -35,13 +35,14 @@ body {
   background-image: url("/images/covalence-store-apparel-hero.jpg");
   /* background-position: 0% 25%; */
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   position: relative;
   height: 25em;
 }
 #mischero {
   background-image: url("/images/covalence-store-misc-hero.jpg");
-  background-position: 0% 25%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -55,7 +56,7 @@ body {
   color: red;
 }
 
-/* #apparel {
+#apparel {
   color: #17a2b8;
   font-family: "brandon grotesque", Arial, Helvetica, sans-serif;
 }
@@ -66,7 +67,7 @@ body {
 #contact {
   color: #17a2b8;
   font-family: "brandon grotesque", Arial, Helvetica, sans-serif;
-} */
+}
 #cart {
   color: white;
 }
@@ -88,4 +89,9 @@ body {
   font-family: "brandon grotesque";
   font-weight: bold;
   font-size: 64px;
+}
+
+p{
+  color:#17a2b8;
+  font-size: 1.5em
 }
