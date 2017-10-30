@@ -30,7 +30,7 @@ angular
           templateUrl: "views/misc.html",
           controller: "MiscController"
         })
-        .when("/single_product", {
+        .when("/single_product/:id", {
           templateUrl: "views/single_product.html",
           controller: "SingleProductController"
         })

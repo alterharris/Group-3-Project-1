@@ -1,4 +1,26 @@
 <main-navigation></main-navigation>
-<h3> Single Product Page</h3>
-
+<div class="jumbotron" id="item">
+    <a ng-href="/{{ product.id }}"></a>
+    <div class="media">
+        <img width=300 class="align-self-center mr-3" ng-src="{{ product.imageurl }}" alt="Generic placeholder image">
+        <div class="media-body">
+            <p>{{ product.price | currency }}</p>
+            <h1 class="mt-0">{{ product.title }}</h1>
+            <h5> {{ product.description }}</h5>
+            <!-- <h5 class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus mus.</h5> -->
+            </br>
+            <a class="btn btn-info btn-lg" id="purchase" href="/payment">Purchase</a>
+        </div>
+    </div>
+</div>
 <footer-nav></footer-nav>
+
+
+<!-- <h3>Single Product Page</h3> -->
+
+<!-- <a ng-href="/{{ product.id }}">
+    <div class="col-sm">
+        <img width="600em" ng-src="{{ product.imageurl }}" class="photo" alt="">
+        <p>{{ product.title }} {{ product.price | currency }}</p>
+        <a class="btn btn-info btn-lg" href="/payment">Purchase</a>  -->

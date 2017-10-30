@@ -13,7 +13,7 @@ Covalence Online Store
     * Contact us page - Should have a form where people can input their name, email, and a message. You should use sendgrid to email yourselves in response to this form being filled out.
     * A single product page - A page that shows the image, name, description, and price for the single product you are viewing and also an add to cart button
     * A checkout page - A page that shows the items you are purchasing and has a payment form
-        * Should have fields for email, card number, CVC, expiration, AND billing zip code
+        * DONE (ED) Should have fields for email, card number, CVC, expiration, AND billing zip code
         * After checkout, you should send an email to the customer thanking them for their purchase, complete with the list of items they purchased and the amounts
     * DONE: A navbar at the top of the site
         * Logo links to the home page
@@ -42,10 +42,10 @@ Covalence Online Store
     * DONE (BB): PurchasesProducts
         * productid int FK for Product id, cascade update, cascade on delete
         * purchaseid int FK for Purchase id, cascade update, cascade on delete
-* Must use Express and NodeJS, hosted in Heroku
-* (IP)Must use prerender.io
-* (BB)Must use Stripe for card processing
-* INSTALLED (BB): Must use Sendgrid or Mailgun for email sending
+* DONE Must use Express and NodeJS, hosted in Heroku
+* DONE (ED) Must use prerender.io
+* DONE (ED) Must use Stripe for card processing
+* DONE (BB): Must use Sendgrid or Mailgun for email sending
 * Must be responsive (look good on mobile and desktop)
     * Bootstrap's Grid System will be very helpful
     * You can find standalone grid systems if you don't want to use Bootstrap

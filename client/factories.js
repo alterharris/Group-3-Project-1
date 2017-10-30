@@ -6,9 +6,6 @@ angular
       return $resource("/api/categories/:id");
     }
   ])
-  .factory("Payment", ['$resource', function($resource){
-    return $resource('/api/payment/:id', {id: '@id'})
-  }])
   .factory("ContactForm", [
     "$resource",
     function($resource) {
@@ -19,6 +16,12 @@ angular
   function($resource) {
     return $resource('/api/products/category/:categoryid', {categoryid: '@categoryid'});
   }]) 
+  .factory("SingleProduct", ["$resource", function($resource){
+    return $resource('/api/products/:id', {id:'@id'});
+  }])
  .factory("Misc", ["$resource",  function($resource) {
     return $resource('/api/products/category/:categoryid', {categoryid:' @categoryid'});
+ }])
+ .factory("Payment", ['$resource', function($resource){
+   return $resource('/api/payment/:id', {id: '@id'})
  }]);

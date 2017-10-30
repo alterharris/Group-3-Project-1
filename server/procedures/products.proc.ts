@@ -5,7 +5,7 @@ export function all(): Promise<Array<models.IProduct>> {
 }
 
 export function product(id: number): Promise<Array<models.IProduct>> {
-  return row("getProductByID");
+  return row("getProductByID",[id]);
 }
 
 export function prodcategories(categoryid:number):Promise<Array<models.IProduct>> {

@@ -1,93 +1,112 @@
+.contact {
+  background-color: #394447;
+  opacity: 0.9;
+  height: 600px;
+}
 #contact-form {
-    width: 800px;
-    margin: 0 auto;
-    padding: 1em;
-  }
-  body {
-    margin: 61px 0 3em 0;
-  }
+  width: 400px;
+  margin: 0 auto;
+  padding: 1em;
+}
+body {
+  margin: 61px 0 3em 0;
+}
+.jumbotron {
+  border-radius: 0;
+}
 
-.payment-body{
-    padding-top: 70px;
-  } 
-  
-  #superhero {
-    background: url("/images/covalence-store-home.jpg") no-repeat center center;
-    margin: auto;
-    background-position: center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-  }
-  
-  #superdiv {
-    color: white;
-    position: absolute;
-    top: 400px;
-    left: 200px;
-  }
-  .herohanger {
-    background-image: url("/images/covalence-store-apparel-hero.jpg");
-    /* background-position: 0% 25%; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 25em;
-  }
-  #mischero {
-    background-image: url("/images/covalence-store-misc-hero.jpg");
-    background-position: 0% 25%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 25em;
-  }
-  .nav-color {
-    background-color: #394447;
-    opacity: .85;
-  }
-  
-  #apparel {
-    color: #17a2b8;
-    font-family: brandon grotesque;
-  }
-  #misc {
-      color: #17a2b8;
-      font-family: brandon grotesque;
-    }
-  #contact {
-      color: #17a2b8;
-      font-family: brandon grotesque;
-    }
-  #cart {
-    color: white;
-  }
-  
-  .imgCreditCard {
-    float: left;
-  }
-  
-  #usableCards {
-    margin-left: 5em;
-  }
-  
-  .useCreditCards {
-    margin-left: 20em;
-    margin-bottom: 7em;
-  }
-  
-  #welcome {
-      font-family: brandon grotesque;
-      font-weight: bold;
-      font-size: 64px;
-  }
+.payment-body {
+  padding-top: 70px;
+  display:block;
+  position: center;
+  margin:auto;
+}
+#superhero {
+  background: url("/images/covalence-store-home.jpg") no-repeat center center;
+  margin: auto;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  background-color: #394447;
+}
 
-  #number-title{
-    width: 100%;
-  }
+#superdiv {
+  color: white;
+  position: absolute;
+  top: 20em;
+  left: 5em;
+}
+.herohanger {
+  background-image: url("/images/covalence-store-apparel-hero.jpg");
+  /* background-position: 0% 25%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 25em;
+}
+#mischero {
+  background-image: url("/images/covalence-store-misc-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 25em;
+}
+.nav-color {
+  background-color: #394447;
+  /* opacity: 0.85; */
+}
+.nav-link {
+  color: red;
+}
 
-  .photo{
-   
-    
-  }
+#apparel {
+  color: #17a2b8;
+  font-family: "brandon grotesque", Arial, Helvetica, sans-serif;
+}
+#misc {
+  color: #17a2b8;
+  font-family: "brandon grotesque", Arial, Helvetica, sans-serif;
+}
+#contact {
+  color: #17a2b8;
+  font-family: "brandon grotesque", Arial, Helvetica, sans-serif;
+}
+#cart {
+  color: white;
+}
+
+.imgCreditCard {
+  float: left;
+}
+
+#usableCards {
+  margin-left: 5em;
+}
+
+.useCreditCards {
+  margin-left: 20em;
+  margin-bottom: 7em;
+}
+
+#welcome {
+  font-family: "brandon grotesque";
+  font-weight: bold;
+  font-size: 64px;
+}
+
+p {
+  color: #17a2b8;
+  font-size: 20px;
+}
+
+.btn {
+  margin-left: 15px;
+}
+
+#purchase {
+  display: inline-block;
+}
