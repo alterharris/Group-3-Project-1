@@ -30,7 +30,9 @@ app.get("*", (req, res, next) => {
         res.sendFile(path.join(clientPath, "index.html"));
     }
 });
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000, () => {
+    console.log('Listening on port 3000.');
+});
 function isAsset(path) {
     let pieces = path.split("/");
     if (pieces.length === 0) {
