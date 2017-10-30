@@ -2,7 +2,7 @@ angular
   .module("Project1", [
     "Project1.controllers",
     "Project1.factories",
-    // 'Project1.services',
+    "Project1.services",
     "Project1.directives",
     "ngRoute",
     "ngResource"

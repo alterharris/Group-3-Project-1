@@ -35,67 +35,70 @@ angular
   .controller("ApparelController", [
     "$scope",
     "Apparel",
-    // "SEOService",
-    // "$location",
+    "SEOService",
+    "$location",
     function($scope, Apparel, SEOService, $location) {
       $scope.products = Apparel.query({ categoryid: 1 });
 
-      // SEOService.setSEO({
-      //   title: "Covalence Apparel",
-      //   image:
-      //     "http://" +
-      //     $location.host() +
-      //     "/images/covalence-store-apparel-hero.png",
-      //   url: $location.url(),
-      //   description: "Buy Awesome Covalence Apparel"
-      // });
+      SEOService.setSEO({
+        title: "Covalence Apparel",
+        image:
+          "http://" +
+          $location.host() +
+          "/images/covalence-store-apparel-hero.png",
+        url: $location.url(),
+        description: "Buy Awesome Covalence Apparel"
+      });
     }
   ])
   .controller("MiscController", [
     "$scope",
     "Misc",
-    // "SEOService",
-    // "$location",
+    "SEOService",
+    "$location",
     function($scope, Misc, SEOService, $location) {
       $scope.products = Misc.query({ categoryid: 11 });
 
-      // SEOService.setSEO({
-      //   title: "Covalence Stuff",
-      //   image:
-      //     "http://" +
-      //     $location.host() +
-      //     "/images/covalence-store-misc-hero.png",
-      //   url: $location.url(),
-      //   description: "Buy Awesome Covalence Stuff"
-      // });
+      SEOService.setSEO({
+        title: "Covalence Stuff",
+        image:
+          "http://" +
+          $location.host() +
+          "/images/covalence-store-misc-hero.png",
+        url: $location.url(),
+        description: "Buy Awesome Covalence Stuff"
+      });
     }
   ])
   //.controller("SingleProductController", ['$scope', '$RouteParams', ])
   //  /]*/
-  .controller("SingleProductController", ['$scope', 'SingleProduct','$routeParams','$location', function($scope, SingleProduct,
-    $routeParams, $location) {
-      $scope.product = SingleProduct.get({id: $routeParams.id});
+  .controller("SingleProductController", [
+    "$scope",
+    "SingleProduct",
+    "$routeParams",
+    "$location",
+    function($scope, SingleProduct, $routeParams, $location) {
+      $scope.product = SingleProduct.get({ id: $routeParams.id });
     }
   ])
-
   .controller("ContactController", [
     "$scope",
     "ContactForm",
-    // "SEOService",
-    // "$location",
+    "SEOService",
+    "$location",
     function($scope, ContactForm, SEOService, $location) {
+      SEOService.setSEO({
+        title: "Contact the Covalence Store",
+        image: "http://" + $location.host() + "/images/Newlogo.png",
+        url: $location.url(),
+        description: "Contact the Covalence Store"
+      });
       $scope.send = function() {
         let contact = new ContactForm({
           from: $scope.email,
           message: $scope.message
         });
 
-        // SEOService.setSEO({
-        //   title: "Contact Covalence Store",
-        //   image: "http://" + $location.host() + "/images/Newlogo.png",
-        //   url: $location.url(),
-        //   description: "Contact the Covalence Store"
-        // });
         //makes a POST request to /api/contactform with a body with properties from and message
         contact.$save(
           function() {

@@ -17,9 +17,9 @@ body {
 
 .payment-body {
   padding-top: 70px;
-  display:block;
+  display: block;
   position: center;
-  margin:auto;
+  margin: auto;
 }
 #superhero {
   background: url("/images/covalence-store-home.jpg") no-repeat center center;
@@ -59,9 +59,6 @@ body {
   background-color: #394447;
   /* opacity: 0.85; */
 }
-.nav-link {
-  color: red;
-}
 
 #apparel {
   color: #17a2b8;
@@ -100,7 +97,7 @@ body {
 
 p {
   color: #17a2b8;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .btn {
